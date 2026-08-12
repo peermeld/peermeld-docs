@@ -1,0 +1,24 @@
+{
+  "title": "Peermeld Docs",
+  "pages": [
+    "index",
+    "quickstart",
+    "---Start Here---",
+    "getting-started",
+    "---The Feed---",
+    "feed",
+    "---Profile & Portfolio---",
+    "profile",
+    "---Projects & Products---",
+    "projects",
+    "launch",
+    "---People & Companies---",
+    "network",
+    "---Reputation---",
+    "rewards",
+    "---Help---",
+    "faq",
+    "changelog",
+    "glossary"
+  ]
+}

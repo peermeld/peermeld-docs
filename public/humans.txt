@@ -1,0 +1,9 @@
+/* TEAM */
+Site: Peermeld Docs
+About: https://peermeld.com
+Platform documented: Peermeld — the professional network for developers, designers, founders and creators
+
+/* SITE */
+Built with: Next.js 16.3 + Fumadocs (MDX)
+Rendering: 100% static export (no server required)
+Standards: schema.org JSON-LD, Open Graph, Twitter Cards, RSS 2.0, llms.txt, sitemap.xml

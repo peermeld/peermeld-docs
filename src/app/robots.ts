@@ -1,0 +1,33 @@
+import type { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/seo';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: [],
+      },
+      {
+        // Explicitly welcome AI search crawlers
+        userAgent: [
+          'GPTBot',
+          'ChatGPT-User',
+          'ClaudeBot',
+          'Claude-User',
+          'PerplexityBot',
+          'Google-Extended',
+          'Applebot-Extended',
+          'Bytespider',
+        ],
+        allow: '/',
+      },
+    ],
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
+  };
+}
