@@ -36,7 +36,7 @@
     "serve": "^14.2.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "wrangler": "^4.121.0"
+    "wrangler": "^3.114.17"
   },
   "description": "The official documentation and blog for Peermeld — the professional network for developers, designers, founders and creators. Built with Next.js 16 + Fumadocs, fully static export, 100+ SEO-optimized guides.",
   "author": "Peermeld",
