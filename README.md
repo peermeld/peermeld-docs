@@ -49,6 +49,36 @@ npm run build      # outputs to out/
 npm run start      # serves out/ locally
 ```
 
+## Deploy to Cloudflare
+
+This site is a **static export** (`out/`). Do **not** use OpenNext / `opennextjs-cloudflare` — there is no Node server and no `.next/standalone`.
+
+`wrangler.jsonc` points Workers static assets at `./out` so `npx wrangler deploy` uploads HTML, not a Next.js Worker.
+
+```bash
+npm install
+npx wrangler login
+npm run deploy          # next build && wrangler deploy
+```
+
+Cloudflare dashboard (Workers / Pages):
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Output directory | `out` (not `.next`) |
+| Node.js | `20` (see `.nvmrc`) |
+| `NEXT_PUBLIC_SITE_URL` | `https://docs.peermeld.com` |
+
+If the project is a **Pages** site instead of a Worker:
+
+```bash
+npm run pages:deploy
+```
+
+Set build output directory to `out` and do not run `wrangler deploy` (that path auto-migrates Next.js to OpenNext and fails).
+
 ## Regenerate blog content
 
 ```bash

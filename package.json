@@ -8,7 +8,10 @@
     "start": "serve out",
     "types:check": "next typegen && tsc --noEmit",
     "lint": "eslint",
-    "generate:blog": "node scripts/generate-blog.mjs"
+    "generate:blog": "node scripts/generate-blog.mjs",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "pages:deploy": "npm run build && wrangler pages deploy out --project-name=peermeld-docs"
   },
   "dependencies": {
     "cnfast": "^0.1.0",
@@ -27,12 +30,13 @@
     "@types/node": "^26.1.2",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.3.0",
     "postcss": "^8.5.25",
     "serve": "^14.2.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "16.3.0"
+    "wrangler": "^4.121.0"
   },
   "description": "The official documentation and blog for Peermeld — the professional network for developers, designers, founders and creators. Built with Next.js 16 + Fumadocs, fully static export, 100+ SEO-optimized guides.",
   "author": "Peermeld",
