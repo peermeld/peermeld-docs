@@ -1,0 +1,69 @@
+---
+title: Build Logs — Write Your Product Journey
+description: Peermeld build logs — a rich markdown editor with instant preview for writing details, guides and updates about your product, and how logs feed the Feed and your SEO.
+---
+
+# Build Logs
+
+A **build log** is a dated, markdown-formatted write-up attached to your project: details, guides, decisions and progress updates. Peermeld gives you a **rich markdown editor with instant preview** — write structured, technical content without leaving the platform.
+
+## Why build logs beat "I shipped a thing"
+
+- **They show process**, which is what collaborators and hiring teams actually evaluate.
+- **They compound in search** — long-form markdown with headings and code terms is exactly the content Google and AI answer engines lift from.
+- **They feed the Feed** — share each log to the [Feed](../feed) and get a rich preview card pointing at your project.
+
+## Writing a great log
+
+<Steps>
+<Step>
+
+### Open the markdown editor
+From your project, create a new log. Write in GitHub-flavoured markdown — headings, lists, code blocks, images — and check the live preview as you type.
+
+</Step>
+<Step>
+
+### Structure every log the same way
+**Context** (what & why) → **Changes** (what you did) → **Decisions** (trade-offs) → **Next** (what's coming). Four short sections, every time. Predictable structure builds a readership.
+
+</Step>
+<Step>
+
+### Include the technical specifics
+Name the libraries, paste the tricky code snippet, admit what broke. "Fixed a race condition in our Socket.io reconnect logic" is the sentence that makes another engineer trust you.
+
+</Step>
+<Step>
+
+### Share it to the Feed
+Post the log link with a one-line takeaway. The Feed card unfurls, your project gets the click, and the post works its way through [Newest and Trending](../feed/tabs-and-filters).
+
+</Step>
+</Steps>
+
+## Sample log skeleton
+
+```markdown
+## Build log #4 — Search that doesn't embarrass me
+
+### Context
+Tags-only discovery wasn't enough; people search "postgres react".
+
+### Changes
+- Added full-text search across project names + stack tags
+- Debounced input at 250ms; results render in <100ms
+
+### Decisions
+Chose Postgres tsvector over an external service —
+zero new infra, good enough relevancy at our scale.
+
+### Next
+Filters UI lands this week. Then: saved searches.
+```
+
+## Cadence
+
+- **Weekly per active project** is the sweet spot — and it stacks with your daily [streak](../rewards/streaks).
+- Number your logs (#1, #2, #3…). Numbers make progress visible at a glance on your project page.
+- Cross-link logs to the relevant [portfolio blocks](../profile/portfolio) once the feature ships.

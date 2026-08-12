@@ -1,0 +1,3 @@
+Contact: https://peermeld.com/company/peermeld
+Preferred-Languages: en
+Canonical: https://docs.peermeld.com/.well-known/security.txt

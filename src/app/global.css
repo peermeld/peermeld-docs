@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* Self-hosted-free font stack: instant rendering, zero layout shift (CLS = 0) */
+:root {
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  /* Peermeld brand: indigo/violet accent */
+  --color-fd-primary: hsl(243 75% 59%);
+  --color-fd-primary-foreground: hsl(0 0% 100%);
+}
+
+.dark {
+  --color-fd-primary: hsl(243 90% 78%);
+  --color-fd-primary-foreground: hsl(243 75% 12%);
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html > body[data-scroll-locked] {
+  margin-right: 0px !important;
+  --removed-body-scroll-bar-size: 0px !important;
+}
