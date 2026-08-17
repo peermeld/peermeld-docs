@@ -6,6 +6,12 @@
     "directory": "./out",
     "not_found_handling": "404-page"
   },
+  "routes": [
+    {
+      "pattern": "docs.peermeld.com/*",
+      "zone_name": "peermeld.com"
+    }
+  ],
   "observability": {
     "enabled": true
   }
